@@ -5,7 +5,7 @@
 }
 body{
     font-family: poppins,sans-serif;
-    background-color: rgba(24, 22, 22, 0.546);
+    background-color: rgba(24, 22, 22, 0.558);
 }
 
 nav{
@@ -35,7 +35,18 @@ nav ul li{
     justify-content: space-around;
     margin: 23px 0;
 }
-left 
+h1{
+    text-align: center;
+    padding: 100px 20px;
+}
+p{
+    text-align: center;
+    color: burlywood;
+    font
+}
+
    
+
+
 
 
