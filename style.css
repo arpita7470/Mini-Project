@@ -45,11 +45,57 @@ p{
 
 }
 
-   
+ /* register-property.html ke form ke liye styling */
+#register-form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 400px;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#register-form input,
+#register-form textarea {
+  margin-bottom: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#register-form textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+#register-form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#register-form button:hover {
+  background: #0056b3;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 24px;
+}  
 
 
 
    
+
 
 
 
