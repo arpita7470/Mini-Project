@@ -45,8 +45,8 @@ p{
 
 }
 
- /* register-property.html ke form ke liye styling */
-#register-form {
+
+  register-form{
   background: #fff;
   padding: 24px;
   border-radius: 8px;
@@ -95,6 +95,7 @@ h2 {
 
 
    
+
 
 
 
