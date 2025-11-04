@@ -1,19 +1,27 @@
-*{
-    padding:0%;
-    margin:0%;
-    box-sizing:border-box;
-}
-body{
-    font-family: poppins,sans-serif;
-    background-color: rgba(24, 22, 22, 0.558);
-}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:100%;
+    min-height:100vh;
+    z-index: -1;
+    object-fit: cover;
+}
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height:60px;
-    background-color: rgba(0, 0, 0, 0.368);
+    background-color: rgba(0, 0, 0, 0.455);
+    position : sticky;
+    
     } 
 
 
@@ -24,9 +32,27 @@ nav ul{
     } 
 
 nav ul li{ 
+  
     list-style: none;
-    margin: 0 23px;   
+    margin: 0 23px; 
+    
+
+     
+a{
+    color: black;
+    text-decoration: none;
+    transition:color 0.5s;
+    
 }
+a:hover{
+    color: #0ef;
+}
+}
+
+
+
+
+
 .left{
     font-size: 1.5rem;
 }
@@ -41,64 +67,72 @@ h1{
 }
 p{
     text-align: center;
-    color: burlywood;
+    color: rgb(121, 73, 10);
 
 }
+.register-btn {
+    
+    padding: 10px 20px;
+    
+    color:rgba(0, 0, 0, 0.692);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.2rem;
 
+}
+/* 📱 1️⃣ Mobile Phones (up to 480px width) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    padding: 8px;
+  }
 
-  register-form{
-  background: #fff;
-  padding: 24px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  max-width: 400px;
-  margin: 16px auto;
-  display: flex;
-  flex-direction: column;
+  header, nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container, section, footer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  button, a {
+    width: 100%;
+    display: block;
+    margin: 8px 0;
+  }
 }
 
-#register-form input,
-#register-form textarea {
-  margin-bottom: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
+/* 💊 2️⃣ Tablets (481px–768px width) */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 95%;
+    margin: auto;
+  }
+
+  .grid-2, .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
 }
 
-#register-form textarea {
-  height: 80px;
-  resize: vertical;
+/* 💻 3️⃣ Laptops aur bade screens (min 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
-
-#register-form button {
-  background: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 0;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-#register-form button:hover {
-  background: #0056b3;
-}
-
-h2 {
-  text-align: center;
-  color: #333;
-  margin-bottom: 24px;
-}  
-
-
-
-   
-
-
-
-
-
-
-
