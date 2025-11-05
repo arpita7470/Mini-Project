@@ -1,138 +1,93 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins,sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
 }
-video{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width:100%;
-    min-height:100vh;
-    z-index: -1;
-    object-fit: cover;
+
+/* Background video */
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
 }
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height:60px;
-    background-color: rgba(0, 0, 0, 0.455);
-    position : sticky;
-    
-    } 
 
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 30px;
+  color: white;
+  z-index: 10;
+  position:sticky;
+}
 
-nav ul{
-    display: flex;
-    
-    justify-content: center;
-    } 
+.left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-nav ul li{ 
+/* Nav links */
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0ef;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  padding: 5px 8px;
+  outline: none;
+  width: 160px;
+}
+
+.search-box button {
+  border: none;
+  background: #0ef;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.hero {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.827);
+  margin-top: 120px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(100, 49, 31, 0.917);
+  margin-top:5%;
   
-    list-style: none;
-    margin: 0 23px; 
-    
-
-     
-a{
-    color: black;
-    text-decoration: none;
-    transition:color 0.5s;
-    
-}
-a:hover{
-    color: #0ef;
-}
 }
 
 
-
-
-
-.left{
-    font-size: 1.5rem;
-}
-.firstsection{
-    display: flex;
-    justify-content: space-around;
-    margin: 23px 0;
-}
-h1{
-    text-align: center;
-    padding: 100px 20px;
-}
-p{
-    text-align: center;
-    color: rgb(121, 73, 10);
-
-}
-.register-btn {
-    
-    padding: 10px 20px;
-    
-    color:rgba(0, 0, 0, 0.692);
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 1.2rem;
-
-}
-/* 📱 1️⃣ Mobile Phones (up to 480px width) */
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    padding: 8px;
-  }
-
-  header, nav {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .container, section, footer {
-    width: 100%;
-    padding: 10px;
-  }
-
-  button, a {
-    width: 100%;
-    display: block;
-    margin: 8px 0;
-  }
-}
-
-/* 💊 2️⃣ Tablets (481px–768px width) */
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-
-  .container {
-    max-width: 95%;
-    margin: auto;
-  }
-
-  .grid-2, .grid-3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-  }
-}
-
-/* 💻 3️⃣ Laptops aur bade screens (min 1024px) */
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
